@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="generator" content="pandoc">
+  <meta name="author" content="张凯">
+  <title>Qcon 分享</title>
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
+  <link rel="stylesheet" href="../../reveal.js/css/reveal.css">
+  <style type="text/css">code{white-space: pre;}</style>
+  <link rel="stylesheet" href="../../reveal.js/css/theme/black.css" id="theme">
+  <!-- Printing and PDF exports -->
+  <script>
+    var link = document.createElement( 'link' );
+    link.rel = 'stylesheet';
+    link.type = 'text/css';
+    link.href = window.location.search.match( /print-pdf/gi ) ? '../../reveal.js/css/print/pdf.css' : '../../reveal.js/css/print/paper.css';
+    document.getElementsByTagName( 'head' )[0].appendChild( link );
+  </script>
+  <!--[if lt IE 9]>
+  <script src="../../reveal.js/lib/js/html5shiv.js"></script>
+  <![endif]-->
+</head>
+<body>
+  <div class="reveal">
+    <div class="slides">
+
+<section>
+  <h1 class="title">Qcon 分享</h1>
+  <h2 class="author">张凯</h2>
+  <h3 class="date">2017 年 4 月 17 日</h3>
+</section>
+
+<section><section id="微服务的模式语言" class="titleslide slide level1"><h1>微服务的模式语言</h1></section><section id="单体应用" class="slide level2">
+<h1>单体应用</h1>
+<figure>
+<img src="images/monolithic-architecture.png" style="width:80.0%" />
+</figure>
+</section><section id="缺点" class="slide level2">
+<h1>缺点</h1>
+<ul>
+<li class="fragment">随着时间推移，应用会越来越大，越来越复杂，造成：
+<ul>
+<li class="fragment">难以完全理解</li>
+<li class="fragment">难以敏捷开发</li>
+<li class="fragment">难以敏捷部署</li>
+</ul></li>
+<li class="fragment">将来难以更换技术栈</li>
+</ul>
+</section><section id="微服务" class="slide level2">
+<h1>微服务</h1>
+<figure>
+<img src="images/microservice-architecture.jpg" style="width:60.0%" />
+</figure>
+</section><section id="利于持续交付部署" class="slide level2">
+<h1>利于持续交付/部署</h1>
+<figure>
+<img src="images/cd-microservice.jpg" style="width:50.0%" />
+</figure>
+</section><section id="更小更简单的应用" class="slide level2">
+<h1>更小，更简单的应用</h1>
+<ul>
+<li class="fragment">易于理解和开发</li>
+<li class="fragment">可以更快地构建和部署</li>
+<li class="fragment">更短的启动时间</li>
+<li class="fragment">更好地隔离错误</li>
+<li class="fragment">更灵活的技术栈</li>
+</ul>
+</section><section id="易于扩展" class="slide level2">
+<h1>易于扩展</h1>
+<figure>
+<img src="images/clear-responsibility.jpg" style="width:60.0%" />
+</figure>
+</section><section id="微服务不是银弹" class="slide level2">
+<h1>微服务不是银弹</h1>
+<ul>
+<li class="fragment">开发分布式系统的复杂性</li>
+<li class="fragment">测试分布式系统的复杂性</li>
+<li class="fragment">部署和操作分布式系统的复杂性 -&gt; PaaS</li>
+<li class="fragment">开发和部署横跨多个服务的特性需要审慎的协调</li>
+<li class="fragment">要使用多个数据库，并进行事务管理以保证最终的一致性</li>
+</ul>
+</section><section id="微服务模式语言" class="slide level2">
+<h1>微服务模式语言</h1>
+<figure>
+<img src="images/microservice-pattern-language.jpg" style="width:60.0%" />
+</figure>
+</section><section id="部署框架" class="slide level2">
+<h1>部署框架</h1>
+<figure>
+<img src="images/deployment-architecture.jpg" style="width:60.0%" />
+</figure>
+</section><section id="解耦方法" class="slide level2">
+<h1>解耦方法</h1>
+<figure>
+<img src="images/decomposition.jpg" style="width:60.0%" />
+</figure>
+</section><section id="部署方式" class="slide level2">
+<h1>部署方式</h1>
+<figure>
+<img src="images/deployment.jpg" style="width:60.0%" />
+</figure>
+</section><section id="通信" class="slide level2">
+<h1>通信</h1>
+<figure>
+<img src="images/communication.jpg" style="width:60.0%" />
+</figure>
+</section><section id="服务发现" class="slide level2">
+<h1>服务发现</h1>
+<figure>
+<img src="images/registration.jpg" style="width:60.0%" />
+</figure>
+</section><section id="基础服务" class="slide level2">
+<h1>基础服务</h1>
+<figure>
+<img src="images/chassis.jpg" style="width:60.0%" />
+</figure>
+</section><section id="数据一致性" class="slide level2">
+<h1>数据一致性</h1>
+<figure>
+<img src="images/data-consistency.jpg" style="width:60.0%" />
+</figure>
+</section><section id="查询" class="slide level2">
+<h1>查询</h1>
+<figure>
+<img src="images/cqrs.jpg" style="width:60.0%" />
+</figure>
+</section><section id="监控" class="slide level2">
+<h1>监控</h1>
+<figure>
+<img src="images/monitor.jpg" style="width:60.0%" />
+</figure>
+</section></section>
+    </div>
+  </div>
+
+  <script src="../../reveal.js/lib/js/head.min.js"></script>
+  <script src="../../reveal.js/js/reveal.js"></script>
+
+  <script>
+
+      // Full list of configuration options available at:
+      // https://github.com/hakimel/reveal.js#configuration
+      Reveal.initialize({
+
+        // Optional reveal.js plugins
+        dependencies: [
+          { src: '../../reveal.js/lib/js/classList.js', condition: function() { return !document.body.classList; } },
+          { src: '../../reveal.js/plugin/zoom-js/zoom.js', async: true },
+          { src: '../../reveal.js/plugin/notes/notes.js', async: true }
+        ]
+      });
+    </script>
+    </body>
+</html>
